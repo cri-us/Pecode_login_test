@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-26T01:44:45.229Z",
+    "end": "2021-10-26T01:44:47.452Z",
+    "duration": 2223,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "dfbf4a33-fdb7-4077-883d-6f59b36ef337",
+    "title": "",
+    "fullFile": "cypress/integration/Login_test_fail_no_password.js",
+    "file": "cypress/integration/Login_test_fail_no_password.js",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "955a3341-b69e-4d80-addb-3c2bb355feda",
+        "title": "Login feature of pecode - Without Password",
+        "fullFile": "",
+        "file": "",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Open the login page and verify the url and title",
+            "fullTitle": "Login feature of pecode - Without Password Open the login page and verify the url and title",
+            "duration": 657,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "_login_page.default.open(); //Open the login page\n\ncy.wait(300);\ncy.url().should(\"include\", \"pecodesoftware\"); //Assert  the url\ncy.title().should(\"include\", \"Login\"); //Assert the title",
+            "err": {},
+            "isRoot": false,
+            "uuid": "604b39e0-0d23-4c40-8867-2942adc0657c",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Entering Username and asserts the url it",
+            "fullTitle": "Login feature of pecode - Without Password Entering Username and asserts the url it",
+            "duration": 305,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "_login_page.default.userName.type('fake@mail.com').should(\"have.value\", \"fake@mail.com\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "63291b7b-1a86-4ea5-8d22-49a40b732964",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "Clicking login button and verify error message ",
+            "fullTitle": "Login feature of pecode - Without Password Clicking login button and verify error message ",
+            "duration": 109,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "_login_page.default.loginBtn.click();\n_login_page.default.errorBx.should(\"have.text\", \"Please enter your password.\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "95d10f73-03e6-49c7-88f7-34057dbb33a3",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "604b39e0-0d23-4c40-8867-2942adc0657c",
+          "63291b7b-1a86-4ea5-8d22-49a40b732964",
+          "95d10f73-03e6-49c7-88f7-34057dbb33a3"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1071,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2021
+}

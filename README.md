@@ -119,7 +119,7 @@ context('Login feature of pecode - Without username', () => {
 
 })
 ``` 
-* 3- Passed Login test(Login in without username)
+* 3- Passed Login test
 This scenarios aimed to login with fulfilled requirements
 ```
 import loginPage from "./page-objects/login_page"
